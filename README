@@ -1,0 +1,32 @@
+©COPYRIGHT 2012 Doug Wallace www.dcwallace.com
+This plugin allows you to style and configure a container that replaces a current
+select. It retains most of the default select features.
+
+USE:
+At the moment there are no parameters needed or used in initiating the plugin.
+You simply pass in your select and call the .sexySelectBox() function.
+
+example:	$('select').sexySelectBox();
+
+FEATURES:
+	- Automatically sets tabindex
+	- Automatically grabs the value of the corresponding select and displays the text
+	- Navigate through the dropdown using arrow keys
+	- Fully customiziable via CSS
+	- Automatically sets the value of the hidden select
+
+
+The select box markup looks like the following:
+
+	<div class="sexySelect" id="sexySelect-0" count="0">
+	
+		<div class="sexySelectCover" count="0" tabindex="0">
+			<span>Value of Select</span>
+		</div><!--end of sexySelectCover"-->
+	
+		<dl class="sexySelectMenu" count="0">
+			<dt class="sexySelectOptGroup">This is an optgroup title</dt>
+			<dd class="sexySelectOpt">This is an option</dd>
+		</dl><!--end of sexySelectMenu"-->
+
+	</div><!--end of sexySelect-->
