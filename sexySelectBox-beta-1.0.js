@@ -1,3 +1,15 @@
+/*!
+ * jQuery sexySelectBox Plugin 
+ * Examples and documentation at: https://github.com/d-c-wallace/sexySelectBox
+ * Copyright (c) 2011-2012 Doug Wallace
+ * Version: 1.0beta
+ * Dual licensed under the MIT and GPL licenses.
+ * GPL - http://www.gnu.org/licenses/gpl.html
+ * MIT - http://www.opensource.org/licenses/mit-license.php
+ * Requires: jQuery v1.3.2 or later
+ */
+
+
 (function( $ ){
 
 	$.fn.sexySelectBox = function() {
@@ -46,7 +58,7 @@
 			
 			var cover = 
 				'<div id="sexySelect-'+count+'" class="sexySelect '+disClass+'" count="'+count+'">'+
-					'<div class="sexySelectCover '+disClass+'" style="width:'+width+'px; position:absolute;" value="'+val+'" count="'+count+'">'+
+					'<div class="sexySelectCover '+disClass+'" style="min-width:'+width+'px; position:absolute;" value="'+val+'" count="'+count+'">'+
 					'<span class="sexySelectText">'+text+'</span>'+
 					'</div>'+
 					list+
