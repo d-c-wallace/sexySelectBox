@@ -199,7 +199,7 @@
 		
 		//-------------------Setting Tab Index---------------//
 		var tabindex = 1;
-	    $('input,select,.sexySelectCover').each(function() {
+	    $('input,select,.sexySelectCover, textarea').each(function() {
         	if (this.type != "hidden") {
             	var $input = $(this);
             	if(!$(this).hasClass('disabled')){	
